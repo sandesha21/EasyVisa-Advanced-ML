@@ -1,5 +1,16 @@
 # EasyVisa Classification - Advanced ML Analysis
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0+-green.svg)
+![XGBoost](https://img.shields.io/badge/XGBoost-1.5+-red.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
+![F1-Score](https://img.shields.io/badge/F1--Score-82%25+-success.svg)
+![Accuracy](https://img.shields.io/badge/Accuracy-85.2%25-success.svg)
+![Dataset](https://img.shields.io/badge/Dataset-25,480%20Records-blue.svg)
+![ROI](https://img.shields.io/badge/Expected%20ROI-300%25+-gold.svg)
+
 ## 🎯 Executive Summary
 This project delivers a comprehensive machine learning solution for automating visa application screening processes. Using advanced ensemble methods and feature engineering on 25,480+ visa applications, we've developed a production-ready system that achieves **82%+ F1-Score** and can reduce manual screening time by **60%** while maintaining **85%+ accuracy**.
 
@@ -12,6 +23,8 @@ This project delivers a comprehensive machine learning solution for automating v
 
 ## Overview  
 This project focuses on automating the visa application screening process by predicting the approval likelihood of visa petitions. By analyzing historical applicant and employer data, the project helps OFLC (Office of Foreign Labor Certification) streamline application reviews, improve decision-making efficiency, and handle increasing application volumes without proportional staff increases.
+
+For detailed project requirements, business context, and technical specifications, see [PROJECT_REQUIREMENTS.md](PROJECT_REQUIREMENTS.md).
 
 ## Objective  
 Develop an advanced machine learning system that predicts visa application approval outcomes based on comprehensive applicant qualifications, employer attributes, and job-related factors. The solution significantly reduces manual screening time, improves approval accuracy, enhances operational efficiency, and provides data-driven insights for policy optimization.
@@ -26,6 +39,8 @@ Develop an advanced machine learning system that predicts visa application appro
   - **Geographic Data**: Continent of origin, region of employment
 - **Target:** Case Status (`Certified` = Approved, `Denied` = Rejected)
 - **Data Quality**: No missing values, comprehensive feature coverage
+
+For complete data dictionary and feature descriptions, see [PROJECT_REQUIREMENTS.md](PROJECT_REQUIREMENTS.md).
 
 ## 🔄 Enhanced Workflow  
 1. **📋 Executive Summary & Planning** – Comprehensive project overview with business impact analysis
@@ -66,10 +81,11 @@ Develop an advanced machine learning system that predicts visa application appro
 ```
 EasyVisa-Advanced-ML/
 ├── 📊 EasyVisa.csv                              # Original dataset (25,480 records)
-├── 📓 EasyVisa_Full_Code_Notebook_v1.ipynb      # Original analysis notebook
-├── 🚀 EasyVisa_Full_Code_Notebook_v2.ipynb      # Enhanced comprehensive analysis
+├── 📓 easyVisa_prediction_project_for_visa_approval_machine_learning_v1.ipynb  # Original analysis notebook
+├── 🚀 easyVisa_prediction_project_for_visa_approval_machine_learning_v2.ipynb  # Enhanced comprehensive analysis
 ├── 📋 README.md                                 # Project documentation (this file)
-├── 📄 LICENSE                                   # MIT License
+├── � PROJECT_REQUIREMENTS.md                   # Detailed project requirements and context
+├── � LICENSE                                    # MIT License
 └── 📁 models/                                   # Generated model artifacts (after running)
     ├── best_model_gradient_boosting.pkl         # Trained best model
     ├── feature_names.pkl                        # Feature configuration
@@ -128,13 +144,13 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost imbalanced-lear
 
 3. **Run the enhanced analysis**
    ```bash
-   jupyter notebook EasyVisa_Full_Code_Notebook_v2.ipynb
+   jupyter notebook easyVisa_prediction_project_for_visa_approval_machine_learning_v2.ipynb
    ```
 
 ### Alternative: Basic Analysis
 For the original analysis, use:
 ```bash
-jupyter notebook EasyVisa_Full_Code_Notebook_v1.ipynb
+jupyter notebook easyVisa_prediction_project_for_visa_approval_machine_learning_v1.ipynb
 ```
 
 ### 🔧 Usage Examples
@@ -258,6 +274,7 @@ def predict_visa_approval(applicant_data):
 6. **Deployment Guide**: Production readiness and implementation steps
 
 ### 🔗 Additional Resources
+- **[PROJECT_REQUIREMENTS.md](PROJECT_REQUIREMENTS.md)**: Complete project requirements and business context
 - **Model Artifacts**: Serialized models ready for deployment
 - **Performance Metrics**: Detailed evaluation results and comparisons
 - **Business Case**: ROI analysis and implementation roadmap
