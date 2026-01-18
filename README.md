@@ -11,6 +11,12 @@
 ![Dataset](https://img.shields.io/badge/Dataset-25,480%20Records-blue.svg)
 ![ROI](https://img.shields.io/badge/Expected%20ROI-300%25+-gold.svg)
 
+---
+
+## 📂 Project Type
+**Business Analytics & Machine Learning** | **Industry**: Immigration & Government Services | **Focus**: Visa Approval Prediction & Process Automation
+
+
 ## 🎯 Executive Summary
 This project delivers a comprehensive machine learning solution for automating visa application screening processes. Using advanced ensemble methods and feature engineering on 25,480+ visa applications, we've developed a production-ready system that achieves **82%+ F1-Score** and can reduce manual screening time by **60%** while maintaining **85%+ accuracy**.
 
@@ -326,4 +332,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author  
 **Sandesh S. Badwaik**  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/sbadwaik/)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sbadwaik/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sandesha21)
+
+---
+
+## 🏷️ Keywords & Topics
+
+**Primary Keywords**: Data Science • Machine Learning • Immigration Analytics • Python • Visa Approval Prediction
+
+**Technical Stack**: Pandas • Scikit-Learn • XGBoost • Gradient Boosting • Data Visualization • Jupyter Notebook
+
+**Business Focus**: Process Automation • Decision Support Systems • Regulatory Compliance • Cost Reduction • Operational Efficiency
+
+**Industry**: Immigration Services • Government Technology • HR Analytics • Policy Automation • Business Intelligence
+
+## 🌟 If you found this project helpful, please give it a ⭐!
