@@ -91,11 +91,7 @@ EasyVisa-Advanced-ML/
 ├── 🚀 easyVisa_prediction_project_for_visa_approval_machine_learning_v2.ipynb  # Enhanced comprehensive analysis
 ├── 📋 README.md                                 # Project documentation (this file)
 ├── � PROJECT_REQUIREMENTS.md                   # Detailed project requirements and context
-├── � LICENSE                                    # MIT License
-└── 📁 models/                                   # Generated model artifacts (after running)
-    ├── best_model_gradient_boosting.pkl         # Trained best model
-    ├── feature_names.pkl                        # Feature configuration
-    └── model_performance_metrics.json           # Performance statistics
+└── � LICENSE                                   # MIT License
 ```
 
 ## ✨ Enhanced Features & Capabilities
