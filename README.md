@@ -90,8 +90,9 @@ EasyVisa-Advanced-ML/
 ├── 📓 easyVisa_prediction_project_for_visa_approval_machine_learning_v1.ipynb  # Original analysis notebook
 ├── 🚀 easyVisa_prediction_project_for_visa_approval_machine_learning_v2.ipynb  # Enhanced comprehensive analysis
 ├── 📋 README.md                                 # Project documentation (this file)
-├── � PROJECT_REQUIREMENTS.md                   # Detailed project requirements and context
-└── � LICENSE                                   # MIT License
+├── 📄 PROJECT_REQUIREMENTS.md                   # Detailed project requirements and context
+├── 📦 requirements.txt                          # Python dependencies
+└── 📜 LICENSE                                   # MIT License
 ```
 
 ## ✨ Enhanced Features & Capabilities
@@ -129,17 +130,32 @@ Python 3.8 or higher
 
 # Install required libraries
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost imbalanced-learn joblib
+
+# Or install from requirements file (recommended)
+pip install -r requirements.txt
+```
+
+### Sample Data Format
+The dataset expects the following structure:
+```csv
+case_id,continent,education_of_employee,has_job_experience,requires_job_training,no_of_employees,yr_of_estab,region_of_employment,prevailing_wage,unit_of_wage,full_time_position,case_status
+EZYV01,Asia,Master's,Y,N,8450,2001,Northeast,79976,Yearly,Y,Certified
+EZYV02,Asia,Bachelor's,N,Y,2543,1998,South,65000,Yearly,Y,Denied
 ```
 
 ### Quick Start (Enhanced Analysis) ⭐
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/EasyVisa-Advanced-ML.git
+   git clone https://github.com/sandesha21/EasyVisa-Advanced-ML.git
    cd EasyVisa-Advanced-ML
    ```
 
 2. **Install dependencies**
    ```bash
+   # Create virtual environment (recommended)
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
    # Install required libraries
    pip install pandas numpy matplotlib seaborn scikit-learn xgboost imbalanced-learn joblib
    ```
@@ -186,6 +202,47 @@ def predict_visa_approval(applicant_data):
         'approval_probability': probability[1],
         'confidence': max(probability)
     }
+```
+
+## 🔧 Troubleshooting
+
+### Common Issues and Solutions
+
+**Issue: ModuleNotFoundError for XGBoost**
+```bash
+# Solution: Install XGBoost separately
+pip install xgboost
+```
+
+**Issue: Jupyter Notebook not starting**
+```bash
+# Solution: Install Jupyter if not already installed
+pip install jupyter notebook
+jupyter notebook
+```
+
+**Issue: Memory errors with large dataset**
+```python
+# Solution: Use chunking for large datasets
+chunk_size = 5000
+for chunk in pd.read_csv('EasyVisa.csv', chunksize=chunk_size):
+    # Process chunk
+    pass
+```
+
+**Issue: Model files not found**
+```bash
+# Solution: Ensure you've run the notebook completely to generate model files
+# Models are saved in the 'models/' directory after training
+```
+
+**Issue: Slow XGBoost training**
+```python
+# Solution: Reduce n_estimators or use early stopping
+xgb_params = {
+    'n_estimators': 100,  # Reduce from default
+    'early_stopping_rounds': 10
+}
 ```
 
 ## 📈 Model Performance Summary
@@ -302,33 +359,30 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 ### Development Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/EasyVisa-Advanced-ML.git
+git clone https://github.com/sandesha21/EasyVisa-Advanced-ML.git
 cd EasyVisa-Advanced-ML
 
 # Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install development dependencies
-pip install jupyter notebook
+# Install dependencies
+pip install -r requirements.txt
 
 # Start Jupyter
 jupyter notebook
 ```
 
+---
+
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-- **OFLC** for providing the comprehensive visa application dataset
-- **Scikit-learn community** for excellent machine learning tools
-- **Jupyter Project** for the interactive development environment
 
 ---
 
 ## 👨‍💻 Author  
 **Sandesh S. Badwaik**  
-*Data Scientist & Machine Learning Engineer*
+*Applied Data Scientist & Machine Learning Engineer*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sbadwaik/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sandesha21)
